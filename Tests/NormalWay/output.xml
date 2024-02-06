@@ -1,164 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.8.2 on win32)" generated="2024-02-05T13:06:41.870818" rpa="false" schemaversion="5">
-<suite id="s1" name="Testcase SuperAdminPage" source="C:\Users\imranuddinms\PycharmProjects\SaleTracker_Automation\Tests\Testcase_SuperAdminPage.robot">
-<kw name="Start Testcases" owner="SuperadminPage" type="SETUP">
+<robot generator="Robot 7.0 (Python 3.8.2 on win32)" generated="2024-02-06T18:31:11.421265" rpa="false" schemaversion="5">
+<suite id="s1" name="SalesTracker login csv" source="C:\Users\imranuddinms\PycharmProjects\SaleTracker_Automation\Tests\NormalWay\SalesTracker_login_csv.robot">
+<test id="s1-t1" name="Verifying credentials" line="11">
+<kw name="Start Testcases" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:06:42.156057" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.137.8:3355/home'.</msg>
+<msg time="2024-02-06T18:31:11.752221" level="INFO">Opening browser 'Chrome' to base url 'http://192.168.137.8:3355/home'.</msg>
 <arg>http://192.168.137.8:3355/home</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-05T13:06:42.156057" elapsed="3.192927"/>
+<status status="PASS" start="2024-02-06T18:31:11.752221" elapsed="3.279421"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-05T13:06:45.349847" elapsed="0.285236"/>
+<status status="PASS" start="2024-02-06T18:31:15.032638" elapsed="0.209441"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T13:06:48.649638" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T13:06:45.636082" elapsed="3.013556"/>
+<status status="PASS" start="2024-02-06T18:31:11.749039" elapsed="3.493415"/>
 </kw>
-<status status="PASS" start="2024-02-05T13:06:42.155062" elapsed="6.495578"/>
+<kw name="Invalid login">
+<msg time="2024-02-06T18:31:15.246068" level="FAIL">Variable '${email}' not found.</msg>
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-02-06T18:31:15.243076" elapsed="0.002992">Variable '${email}' not found.</status>
 </kw>
-<test id="s1-t1" name="Verify SuperAdmin loginpage functionalities" line="11">
-<kw name="Verify SuperAdmin can land on home page" owner="SuperadminPage">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:06:48.658615" level="INFO">Typing text 'alwynj@datatemplate.com' into text field 'xpath://*[@id=':r0:']'.</msg>
-<arg>xpath://*[@id=':r0:']</arg>
-<arg>alwynj@datatemplate.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T13:06:48.657618" elapsed="0.250089"/>
-</kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:06:48.908703" level="INFO">Typing password into text field '//*[@id=':r1:']'.</msg>
-<msg time="2024-02-05T13:06:48.957572" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>//*[@id=':r1:']</arg>
-<arg>Def@123</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T13:06:48.907707" elapsed="0.124666"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:06:49.033371" level="INFO">Clicking element '//*[@id='root']/div/div/div/form/div/button'.</msg>
-<arg>//*[@id='root']/div/div/div/form/div/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T13:06:49.032373" elapsed="0.072900"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T13:06:51.110534" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T13:06:49.106176" elapsed="2.004988"/>
-</kw>
-<status status="PASS" start="2024-02-05T13:06:48.655634" elapsed="2.455530"/>
-</kw>
-<doc>Verify that super admin is able to land on the home page</doc>
-<tag>Functional</tag>
-<status status="PASS" start="2024-02-05T13:06:48.651627" elapsed="2.461530"/>
-</test>
-<test id="s1-t2" name="Verify 'Data Management' Element in super admin dashboard" line="30">
-<kw name="Verify 'Data Management' Element" owner="SuperadminPage">
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:06:51.125124" level="INFO">Clicking link 'link:Dashboard'.</msg>
-<arg>link:Dashboard</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T13:06:51.124127" elapsed="0.166433"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:06:51.371346" level="INFO">Current page contains text 'Data Management'.</msg>
-<arg>Data Management</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-02-05T13:06:51.292540" elapsed="0.078806"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:06:51.372327" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div/ul/li[3]/div/p'.</msg>
-<arg>//*[@id="root"]/div/div[2]/div/ul/li[3]/div/p</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T13:06:51.371346" elapsed="0.149586"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T13:06:53.525561" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T13:06:51.521927" elapsed="2.003634"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:06:53.554395" level="INFO">Current page contains text 'Master Data'.</msg>
-<arg>Master Data</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-02-05T13:06:53.526471" elapsed="0.027924"/>
-</kw>
-<status status="PASS" start="2024-02-05T13:06:51.122132" elapsed="2.433261"/>
-</kw>
-<doc>Verify that super admin able to click on Data Management and create master data</doc>
-<tag>Functional</tag>
-<status status="PASS" start="2024-02-05T13:06:51.117145" elapsed="2.438248"/>
-</test>
-<test id="s1-t3" name="Verify creation of master data in Data management" line="34">
-<kw name="Verify creation of master data" owner="SuperadminPage">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:06:53.561376" level="INFO">Clicking element '//*[@class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-1cccqvr"]'.</msg>
-<arg>//*[@class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-1cccqvr"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T13:06:53.560378" elapsed="0.106716"/>
-</kw>
-<kw name="Mouse Down" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:06:53.668090" level="INFO">Simulating Mouse Down on element '//*[@id="menu-type"]/div[3]/ul/li[1]'.</msg>
-<arg>//*[@id="menu-type"]/div[3]/ul/li[1]</arg>
-<doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
-<status status="PASS" start="2024-02-05T13:06:53.667094" elapsed="0.315871"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:06:53.984296" level="INFO">Clicking element '//*[@id="menu-type"]/div[3]/ul/li[1]'.</msg>
-<arg>//*[@id="menu-type"]/div[3]/ul/li[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T13:06:53.983962" elapsed="0.079789"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:06:54.065747" level="INFO">Clicking element '//*[@id="root"]/div/div[3]/div/div[1]/form/div/div[1]/div[2]/div/div'.</msg>
-<arg>//*[@id="root"]/div/div[3]/div/div[1]/form/div/div[1]/div[2]/div/div</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T13:06:54.064750" elapsed="0.325513"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T13:06:59.406638" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T13:06:54.391261" elapsed="5.015377"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:06:59.409629" level="INFO">Clicking button '//*[@id="root"]/div/div[3]/div/div[1]/form/div/div[2]/button'.</msg>
-<arg>//*[@id="root"]/div/div[3]/div/div[1]/form/div/div[2]/button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T13:06:59.408633" elapsed="0.173643"/>
-</kw>
-<status status="PASS" start="2024-02-05T13:06:53.559381" elapsed="6.022895"/>
-</kw>
-<doc>Verify that super admin able to create master data</doc>
-<tag>Functional</tag>
-<status status="PASS" start="2024-02-05T13:06:53.557443" elapsed="6.026719"/>
-</test>
-<kw name="Finish Testcases" owner="SuperadminPage" type="TEARDOWN">
+<kw name="Finish Testcases" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-05T13:06:59.593156" elapsed="2.572463"/>
+<status status="PASS" start="2024-02-06T18:31:15.249060" elapsed="2.429712"/>
 </kw>
-<status status="PASS" start="2024-02-05T13:06:59.592144" elapsed="2.573475"/>
+<status status="PASS" start="2024-02-06T18:31:15.247066" elapsed="2.432689"/>
 </kw>
-<doc>SalesTracker</doc>
-<status status="PASS" start="2024-02-05T13:06:41.873782" elapsed="20.291837"/>
+<status status="FAIL" start="2024-02-06T18:31:11.746021" elapsed="5.934724">Variable '${email}' not found.</status>
+</test>
+<doc>Verify login functionality</doc>
+<status status="FAIL" start="2024-02-06T18:31:11.423136" elapsed="6.263593"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="3" fail="0" skip="0">Functional</stat>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Testcase SuperAdminPage">Testcase SuperAdminPage</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="SalesTracker login csv">SalesTracker login csv</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-02-06T18:31:11.735522" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\imranuddinms\PycharmProjects\SaleTracker_Automation\Tests\NormalWay\SalesTracker_login_csv.robot", line 0</msg>
+<msg time="2024-02-06T18:31:11.737517" level="ERROR">In source file:
+  File "TestData/Testdata.csv", line 0</msg>
+<msg time="2024-02-06T18:31:11.744495" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find C:\Users\imranuddinms\PycharmProjects\SaleTracker_Automation\Tests\NormalWay\TestData\Testdata.csv but file does not exist.</msg>
 </errors>
 </robot>

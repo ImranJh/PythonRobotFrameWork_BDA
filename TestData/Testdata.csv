@@ -1,0 +1,6 @@
+${email};${password};
+adm@yourstore.com;Def@123
+adm@yourstore.com;${EMPTY}
+${EMPTY};xyx
+jyothilakshmimv@datatemplate.com;abc;
+jyothilakshmimv@datatemplate.com;Def@123;

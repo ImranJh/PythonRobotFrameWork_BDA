@@ -7,7 +7,7 @@ Library    SeleniumLibrary
 Verify add the New Status for the existing lead
     [Documentation]   Verify that add a new status for existing lead
     [Tags]  Functional
-    Open Browser    http://localhost:3000/  chrome
+    Open Browser  http://192.168.137.8:3355/home  chrome
     Maximize Browser Window
     Input Text    //input[@name="userMail"]    alwynj@datatemplate.com
     Input Text    //input[@name="password"]    Def@123

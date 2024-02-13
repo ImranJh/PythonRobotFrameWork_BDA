@@ -4,8 +4,9 @@ Library    SeleniumLibrary
 #Resource    ../../../Resources/CommonFunctionalities.robot
 Resource   ../../Resources/Jyothi/SuperadminPage.robot
 
-Suite Setup     SuperadminPage.Start Testcases
-Suite Teardown   SuperadminPage.Finish Testcases
+Resource  ../../Resources/Common Functionality/Pre_req.robot
+Test Setup  Pre_req.Start Script
+Test Teardown  Pre_req.End Script
 *** Variables ***
 *** Test Cases ***
 Verify SuperAdmin loginpage functionalities

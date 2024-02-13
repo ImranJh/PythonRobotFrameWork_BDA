@@ -3,14 +3,17 @@ Documentation     SalesTracker
 Library    SeleniumLibrary
 #Resource    ../../../Resources/CommonFunctionalities.robot
 Resource    ../../Resources/Jyothi/AdminPage.robot
-Suite Setup     AdminPage.Start testcases
-Suite Teardown    AdminPage.Finish testcases
+Resource  ../../Resources/Common Functionality/Pre_req.robot
+
+
+Test Setup  Pre_req.Start Script
+Test Teardown  Pre_req.End Script
 *** Variables ***
 *** Test Cases ***
-Verify Admin page functionalities
-    [Documentation]    Verify that admin is able to land on the home page
-    [Tags]    Functional
-    AdminPage.Verify Admin can land on home page
+#Verify Admin page functionalities
+#    [Documentation]    Verify that admin is able to land on the home page
+#    [Tags]    Functional
+#    AdminPage.Verify Admin can land on home page
 Verify all the elements present in the Admin homepage
     [Documentation]    Verify that all the labels and controls including text boxes,buttons are present in the home page
     [Tags]    Functional

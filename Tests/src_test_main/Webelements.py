@@ -1,0 +1,60 @@
+# login data
+user_id = "xpath://*[@name='userMail']"
+user_password = "xpath://*[@name='password']"
+login_button = "xpath://button[@type='submit']"
+logout_button = "xpath://button[text()='Logout']"
+search_submit_button = "xpath=//button[@type='submit']"
+# search filter
+search_filter_1 = "xpath://label[text()='Organization:']"
+search_filter_2 = "xpath://label[text()='Lead/POC:']"
+search_filter_3 = "xpath://label[text()='Action By:']"
+search_filter_4 = "xpath://label[text()='Region:']"
+search_filter_5 = "xpath://label[text()='Status:']"
+search_filter_6 = "xpath://label[text()='MSA:']"
+search_filter_7 = "xpath://label[text()='SOW:']"
+search_filter_8 = "xpath://label[text()='NDA:']"
+open_leads_status = "xpath:(//button[@type='button'])[10]"
+add_status_button = "xpath://button[text()='Add Status']"
+status_date = "xpath://input[@name='statusDate']"
+due_date = "xpath://input[@name='triggerDate']"
+status_description = "xpath://input[@name='statusDescription']"
+action_by = ("xpath://div[@class='MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary  "
+             "css-13pru8l']")
+action_by_list_value = ("xpath:(//li[@class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root "
+                        "MuiMenuItem-gutters css-ra2fyx'])")
+edit_leads_status = "xpath:(//button[@type='button'])[12]"
+delete_leads_status = "xpath://button[@type='button'][13]"
+delete_popup_msg = "xpath://button[text()='Yes']"
+# UI elements
+leads = "link:Leads"
+create_lead = "link:Create Lead"
+lead_closure_approval = "link:Lead Closure Approval"
+dashboard = "link:Dashboard"
+report_button = "xpath:(//button[@type='button'])[8]"
+# dashboard elements
+user_name = "xpath://*[@name='userName']"
+user_mail = "xpath://*[@name='userMail']"
+user_role_values = ("xpath://li[@class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root "
+                    "MuiMenuItem-gutters css-ama7e7'][2]")
+user_role_list = "xpath://div[@id='demo-simple-select']"
+manage_users = "xpath://*[@id='root']/div/div[2]/div/ul/li[2]/div/p"
+data_management = "xpath://*[@id='root']/div/div[2]/div/ul/li[3]/div/p"
+master_datatype_list = ("xpath://div[@class='MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input "
+                        "css-1cccqvr']")
+master_datatype_values = "xpath://*[@id='menu-type']/div[3]/ul/li[3]"
+data_value = "//*[@name='name']"
+delete_master_data = "xpath:(//button[@type='button'])[6]"
+# create lead page
+organization = "xpath://*[@name='lead.organization']"
+contact_person = "//*[@name='lead.contactPerson']"
+reference = "xpath://*[@name='lead.reference']"
+nda_date = "xpath://*[@name='lead.nda']"
+msa_date = "xpath://*[@name='lead.msa']"
+sow_date = "xpath://*[@name='lead.sow']"
+created_date = "xpath://*[@name='lead.createdDate']"
+status_list = "xpath://input[@name='lead.status']"
+status_list_value = ("xpath://li[@class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root "
+                     "MuiMenuItem-gutters css-ama7e7'][1]")
+region_list = "xpath://input[@name='lead.region']"
+region_list_value = ("xpath://li[@class='MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root "
+                     "MuiMenuItem-gutters css-ama7e7'][7]")

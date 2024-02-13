@@ -1,70 +1,75 @@
 *** Settings ***
 Library    SeleniumLibrary
-#Variables   ../Webelements.py
+
+Variables    ../../Tests/src_test_main/Webelements.py
 *** Variables ***
 *** Keywords ***
-Start testcases
-    open browser    http://192.168.137.8:3355/home     Chrome
-    maximize browser window
-    sleep   3s
-Finish testcases
-    close browser
-Verify Admin can land on home page
-    #[Arguments]    ${userid}    ${password}
-    input text     xpath://*[@id=':r0:']     jyothilakshmimv@datatemplate.com
-    input password  //*[@id=':r1:']   Def@123
-    click element   //*[@id='root']/div/div/div/form/div/button
-    sleep    2s
+#Start testcases
+#    open browser    http://192.168.137.8:3355/home     Chrome
+#    maximize browser window
+#    sleep   3s
+#Finish testcases
+#    close browser
+#Verify Admin can land on home page
+#    #[Arguments]    ${userid}    ${password}
+#    input text     ${user_id}    jyothilakshmimv@datatemplate.com
+#    input password  ${user_password}   Def@123
+#    click element   ${login_button}
+#    sleep    2s
 Verify all the elements are present in admin home page
     page should contain    Search
     page should contain    Leads:
-    page should contain link    link:Leads
-    page should contain link    link:Create Lead
-    page should contain link    link:Lead Closure Approval
-    page should contain button  xpath://*[@id='root']/div/div[1]/header/div/div[3]/div/button
-    page should contain button    //*[@id='root']/div/div[2]/div/div[1]/form/div/button[1]
-    page should contain button    //*[@id='root']/div/div[2]/div/div[1]/form/div/button[2]
+    page should contain link    ${leads}
+    page should contain link    ${create_lead}
+    page should contain link    ${lead_closure_approval}
+    page should contain button  ${logout_button}
+    page should contain button    ${search_submit_button}
+    page should contain button    ${report_button}
 Verify lead creation link
-    page should contain link    link:Create Lead
-    click link    link:Create Lead
+    page should contain link    ${create_lead}
+    click link    ${create_lead}
     page should contain    Lead Creation    Status Activity:
 Verify the create lead form details
+    click link    ${create_lead}
     page should contain    Organization
-    input text    //*[@name="lead.organization"]    xyzz
+    input text    ${organization}    abc tech
     page should contain    Contact Person
-    input text    //*[@name="lead.contactPerson"]   qwert
+    input text    ${contact_person}   Hari Krishnan
     page should contain    Reference
-    input text      //*[@name="lead.reference"]     asdr
+    input text  ${reference}    asdr
     page should contain    NDA
-    click element    //*[@name="lead.nda"]
-    input text  //*[@name="lead.nda"]   15-02-2024
-    click element    //*[@name="lead.msa"]
-    input text      //*[@name="lead.msa"]   18-02-2024
-    click element    //*[@name="lead.sow"]
-    input text    //*[@name="lead.sow"]     20-02-2024
-    click element   //*[@name="lead.createdDate"]
-    input text    //*[@name="lead.createdDate"]    02-02-2024
+    click element    ${nda_date}
+    input text  ${nda_date}  15-02-2024
+    click element    ${msa_date}
+    input text      ${msa_date}  18-02-2024
+    click element    ${sow_date}
+    input text    ${sow_date}     20-02-2024
+    click element   ${created_date}
+    input text    ${created_date}    07-02-2024
+
     page should contain    Status
-    press keys    //input[@name="lead.status"]  ENTER
+    press keys    ${status_list}  CLICK
+    #Selecting first status value from list
+    mouse down    ${status_list_value}
+    sleep    3s
+    click element    ${status_list_value}
 
+    press keys    ${region_list}  CLICK
+    #selecting 7th value from region list
+    mouse down      ${region_list_value}
+    sleep    3s
+    click element    ${region_list_value}
+    sleep    5s
 
-
-
-
-
-
-#Verify the mandatory text fields
-    #clear element text  //*[@name="lead.contactPerson"]
-    #textfield value should be    //*[@name="lead.contactPerson"]    ${empty}
 Verify submit button in the create lead module
     #scroll element into view    //*[@id="root"]/div/div[2]/form/div[3]/button
-    page should contain button  //*[@id="root"]/div/div[2]/form/div[3]/button
-    click button    //*[@id="root"]/div/div[2]/form/div[3]/button
+    page should contain button  ${search_submit_button}
+    click button    ${search_submit_button}
     sleep    3s
 Verify the Lead Closure Approval link
-    scroll element into view    link:Lead Closure Approval
-    page should contain element    link:Lead Closure Approval
-    click link  link:Lead Closure Approval
+    scroll element into view    ${lead_closure_approval}
+    page should contain element    ${lead_closure_approval}
+    click link  ${lead_closure_approval}
     sleep    3s
 
 

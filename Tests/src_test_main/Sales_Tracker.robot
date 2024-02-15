@@ -16,7 +16,7 @@ Sales Tracker Home Page
     [Documentation]  This Test case is to verify the Homepage Of Sales Tracker
     [Tags]  Functional
 
-    Page Should Contain    Alwyn Joseph
+    Page Should Contain    Jyothi
     Log    Login to application Successfully with 'Super Admin' credential
 
 

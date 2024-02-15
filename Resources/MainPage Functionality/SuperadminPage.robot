@@ -5,7 +5,7 @@ Variables   ../../Tests/src_test_main/Webelements.py
 *** Keywords ***
 Verify SuperAdmin can land on home page
     #[Arguments]    ${userid}    ${password}
-    input text      ${user_id}      alwynj@datatemplate.com
+    input text      ${user_id}      jyothilakshmimv@datatemplate.com
     input password  ${user_password}   Def@123
     click element   ${login_button}
     sleep    2s

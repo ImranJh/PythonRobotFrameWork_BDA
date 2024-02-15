@@ -2,7 +2,7 @@
 Documentation     SalesTracker
 Library    SeleniumLibrary
 #Resource    ../../../Resources/CommonFunctionalities.robot
-Resource    ../../Resources/Jyothi/AdminPage.robot
+Resource    ../../Resources/MainPage Functionality/AdminPage.robot
 Resource  ../../Resources/Common Functionality/Pre_req.robot
 
 

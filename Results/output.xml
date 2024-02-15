@@ -1,1165 +1,231 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.8.2 on win32)" generated="2024-02-05T17:16:47.823789" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.8.2 on win32)" generated="2024-02-15T14:50:49.043668" rpa="false" schemaversion="5">
 <suite id="s1" name="Sales Tracker" source="C:\Users\imranuddinms\PycharmProjects\SaleTracker_Automation\Tests\src_test_main\Sales_Tracker.robot">
 <test id="s1-t1" name="Sales Tracker Home Page" line="15">
 <kw name="Start Script" owner="Pre_req" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:16:48.257263" level="INFO">Opening browser 'chrome' to base url 'http://192.168.137.8:3355/home'.</msg>
+<msg time="2024-02-15T14:50:49.613562" level="INFO">Opening browser 'chrome' to base url 'http://192.168.137.8:3355/home'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-05T17:16:48.256266" elapsed="3.514898"/>
+<status status="PASS" start="2024-02-15T14:50:49.612374" elapsed="3.799658"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-05T17:16:51.772161" elapsed="0.155584"/>
+<status status="PASS" start="2024-02-15T14:50:53.413145" elapsed="0.152741"/>
 </kw>
 <kw name="Login Page" owner="Login">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:16:51.930997" level="INFO">Typing text 'alwynj@datatemplate.com' into text field '//input[@name="userMail"]'.</msg>
+<msg time="2024-02-15T14:50:53.568714" level="INFO">Typing text 'alwynj@datatemplate.com' into text field '//input[@name="userMail"]'.</msg>
 <arg>//input[@name="userMail"]</arg>
 <arg>alwynj@datatemplate.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:16:51.929740" elapsed="0.360037"/>
+<status status="PASS" start="2024-02-15T14:50:53.567616" elapsed="0.436835"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:16:52.290774" level="INFO">Typing text 'Def@123' into text field '//input[@name="password"]'.</msg>
+<msg time="2024-02-15T14:50:54.005987" level="INFO">Typing text 'Def@123' into text field '//input[@name="password"]'.</msg>
 <arg>//input[@name="password"]</arg>
 <arg>Def@123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:16:52.289777" elapsed="0.125664"/>
+<status status="PASS" start="2024-02-15T14:50:54.005448" elapsed="0.176526"/>
 </kw>
 <kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:16:52.416439" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
-<msg time="2024-02-05T17:16:52.786751" level="INFO">Sending keys [Return]</msg>
+<msg time="2024-02-15T14:50:54.183968" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
+<msg time="2024-02-15T14:50:54.555202" level="INFO">Sending keys [Return]</msg>
 <arg>//button[@type="submit"]</arg>
 <arg>[Return]</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:16:52.415441" elapsed="0.395246"/>
+<status status="PASS" start="2024-02-15T14:50:54.182973" elapsed="0.394170"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:16:56.814800" level="INFO">Slept 4 seconds.</msg>
+<msg time="2024-02-15T14:50:58.592165" level="INFO">Slept 4 seconds.</msg>
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:16:52.810687" elapsed="4.004113"/>
+<status status="PASS" start="2024-02-15T14:50:54.577143" elapsed="4.015022"/>
 </kw>
-<status status="PASS" start="2024-02-05T17:16:51.928742" elapsed="4.886980"/>
+<status status="PASS" start="2024-02-15T14:50:53.566620" elapsed="5.026563"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:17:00.820138" level="INFO">Slept 4 seconds.</msg>
+<msg time="2024-02-15T14:51:02.603005" level="INFO">Slept 4 seconds.</msg>
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:16:56.816719" elapsed="4.003419"/>
+<status status="PASS" start="2024-02-15T14:50:58.594174" elapsed="4.008831"/>
 </kw>
-<status status="PASS" start="2024-02-05T17:16:48.255269" elapsed="12.564869"/>
+<status status="PASS" start="2024-02-15T14:50:49.611376" elapsed="12.991629"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:00.848759" level="INFO">Current page contains text 'Alwyn Joseph'.</msg>
+<msg time="2024-02-15T14:51:02.884417" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-15T14:51:02.884417" level="FAIL">Page should have contained text 'Alwyn Joseph' but did not.</msg>
 <arg>Alwyn Joseph</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-02-05T17:17:00.820834" elapsed="0.028922"/>
+<status status="FAIL" start="2024-02-15T14:51:02.603979" elapsed="0.289414">Page should have contained text 'Alwyn Joseph' but did not.</status>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-02-05T17:17:00.850754" level="INFO">Login to application Successfully with 'Super Admin' credential</msg>
 <arg>Login to application Successfully with 'Super Admin' credential</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-05T17:17:00.850754" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-02-15T14:51:02.894518" elapsed="0.000870"/>
 </kw>
 <kw name="End Script" owner="Pre_req" type="TEARDOWN">
 <kw name="LogOut page" owner="Login">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:17:02.868676" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-02-15T14:51:04.904957" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:17:00.853745" elapsed="2.014931"/>
+<status status="PASS" start="2024-02-15T14:51:02.899377" elapsed="2.005580"/>
 </kw>
 <kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:02.869446" level="INFO">Sending key(s) ('[Return]',) to //button[text()="Logout"] element.</msg>
-<msg time="2024-02-05T17:17:03.174395" level="INFO">Sending keys [Return]</msg>
+<msg time="2024-02-15T14:51:04.905925" level="INFO">Sending key(s) ('[Return]',) to //button[text()="Logout"] element.</msg>
+<msg time="2024-02-15T14:51:05.075649" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-15T14:51:05.076647" level="FAIL">Element with locator '//button[text()="Logout"]' not found.</msg>
 <arg>//button[text()="Logout"]</arg>
 <arg>[Return]</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:17:02.869446" elapsed="0.349830"/>
+<status status="FAIL" start="2024-02-15T14:51:04.905925" elapsed="0.176708">Element with locator '//button[text()="Logout"]' not found.</status>
 </kw>
-<status status="PASS" start="2024-02-05T17:17:00.852749" elapsed="2.366527"/>
+<status status="FAIL" start="2024-02-15T14:51:02.898381" elapsed="2.185249">Element with locator '//button[text()="Logout"]' not found.</status>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-05T17:17:03.219276" elapsed="2.410465"/>
+<status status="PASS" start="2024-02-15T14:51:05.083630" elapsed="2.303735"/>
 </kw>
-<status status="PASS" start="2024-02-05T17:17:00.852749" elapsed="4.776992"/>
+<status status="FAIL" start="2024-02-15T14:51:02.896385" elapsed="4.491968">Element with locator '//button[text()="Logout"]' not found.</status>
 </kw>
 <doc>This Test case is to verify the Homepage Of Sales Tracker</doc>
 <tag>Functional</tag>
-<status status="PASS" start="2024-02-05T17:16:48.253273" elapsed="17.378424"/>
-</test>
-<test id="s1-t2" name="Verify the filter icon" line="23">
-<kw name="Start Script" owner="Pre_req" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:05.644662" level="INFO">Opening browser 'chrome' to base url 'http://192.168.137.8:3355/home'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-05T17:17:05.642669" elapsed="3.007456"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-05T17:17:08.651041" elapsed="0.211432"/>
-</kw>
-<kw name="Login Page" owner="Login">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:08.865464" level="INFO">Typing text 'alwynj@datatemplate.com' into text field '//input[@name="userMail"]'.</msg>
-<arg>//input[@name="userMail"]</arg>
-<arg>alwynj@datatemplate.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:17:08.864467" elapsed="0.298203"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:09.163961" level="INFO">Typing text 'Def@123' into text field '//input[@name="password"]'.</msg>
-<arg>//input[@name="password"]</arg>
-<arg>Def@123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:17:09.162670" elapsed="0.115691"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:09.279359" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
-<msg time="2024-02-05T17:17:09.598891" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@type="submit"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:17:09.279359" elapsed="0.351445"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:17:13.635218" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:17:09.630804" elapsed="4.005009"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:17:08.863989" elapsed="4.772239"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:17:17.648588" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:17:13.636228" elapsed="4.012757"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:17:05.640673" elapsed="12.008312"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:17.681902" level="INFO">Current page contains element '//button[@type="submit"]'.</msg>
-<arg>//button[@type="submit"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-02-05T17:17:17.650981" elapsed="0.031914"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-05T17:17:17.686884" level="INFO">Filter icon is present in UI</msg>
-<arg>Filter icon is present in UI</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-05T17:17:17.685887" elapsed="0.000997"/>
-</kw>
-<kw name="End Script" owner="Pre_req" type="TEARDOWN">
-<kw name="LogOut page" owner="Login">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:17:19.700378" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:17:17.694464" elapsed="2.005914"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:19.701370" level="INFO">Sending key(s) ('[Return]',) to //button[text()="Logout"] element.</msg>
-<msg time="2024-02-05T17:17:20.007480" level="INFO">Sending keys [Return]</msg>
-<arg>//button[text()="Logout"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:17:19.700378" elapsed="0.337660"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:17:17.691876" elapsed="2.346162"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-05T17:17:20.038038" elapsed="2.390545"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:17:17.689874" elapsed="4.739895"/>
-</kw>
-<doc>This test case is to verify the filter is present in UI</doc>
-<tag>Functional</tag>
-<status status="PASS" start="2024-02-05T17:17:05.636724" elapsed="16.793852"/>
-</test>
-<test id="s1-t3" name="Verify filter button clickeble" line="30">
-<kw name="Start Script" owner="Pre_req" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:22.440920" level="INFO">Opening browser 'chrome' to base url 'http://192.168.137.8:3355/home'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-05T17:17:22.439553" elapsed="3.344826"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-05T17:17:25.785015" elapsed="0.267644"/>
-</kw>
-<kw name="Login Page" owner="Login">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:26.056648" level="INFO">Typing text 'alwynj@datatemplate.com' into text field '//input[@name="userMail"]'.</msg>
-<arg>//input[@name="userMail"]</arg>
-<arg>alwynj@datatemplate.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:17:26.055652" elapsed="0.291221"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:26.348978" level="INFO">Typing text 'Def@123' into text field '//input[@name="password"]'.</msg>
-<arg>//input[@name="password"]</arg>
-<arg>Def@123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:17:26.348146" elapsed="0.117410"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:26.465556" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
-<msg time="2024-02-05T17:17:26.824951" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@type="submit"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:17:26.465556" elapsed="0.387321"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:17:30.856908" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:17:26.852877" elapsed="4.004824"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:17:26.054037" elapsed="4.803664"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:17:34.873158" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:17:30.857701" elapsed="4.015457"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:17:22.438133" elapsed="12.435025"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:34.875499" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
-<msg time="2024-02-05T17:17:35.292926" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@type="submit"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:17:34.874047" elapsed="0.935503"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-05T17:17:35.811541" level="INFO">User is able to click on the Submit button</msg>
-<arg>User is able to click on the Submit button</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-05T17:17:35.811541" elapsed="0.000000"/>
-</kw>
-<kw name="End Script" owner="Pre_req" type="TEARDOWN">
-<kw name="LogOut page" owner="Login">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:17:37.828606" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:17:35.816527" elapsed="2.012079"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:37.833592" level="INFO">Sending key(s) ('[Return]',) to //button[text()="Logout"] element.</msg>
-<msg time="2024-02-05T17:17:38.163960" level="INFO">Sending keys [Return]</msg>
-<arg>//button[text()="Logout"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:17:37.830598" elapsed="0.365149"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:17:35.815529" elapsed="2.381215"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-05T17:17:38.196744" elapsed="2.376090"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:17:35.814625" elapsed="4.758209"/>
-</kw>
-<doc>Verify that user able to click the filter option button</doc>
-<tag>Functional</tag>
-<status status="PASS" start="2024-02-05T17:17:22.435563" elapsed="18.139261"/>
-</test>
-<test id="s1-t4" name="Verify all filter pre-req are available in UI" line="38">
-<kw name="Start Script" owner="Pre_req" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:40.586791" level="INFO">Opening browser 'chrome' to base url 'http://192.168.137.8:3355/home'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-05T17:17:40.585794" elapsed="2.813046"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-05T17:17:43.399576" elapsed="0.141400"/>
-</kw>
-<kw name="Login Page" owner="Login">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:43.542977" level="INFO">Typing text 'alwynj@datatemplate.com' into text field '//input[@name="userMail"]'.</msg>
-<arg>//input[@name="userMail"]</arg>
-<arg>alwynj@datatemplate.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:17:43.541974" elapsed="0.329121"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:43.872089" level="INFO">Typing text 'Def@123' into text field '//input[@name="password"]'.</msg>
-<arg>//input[@name="password"]</arg>
-<arg>Def@123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:17:43.871925" elapsed="0.134805"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:44.007727" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
-<msg time="2024-02-05T17:17:44.365267" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@type="submit"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:17:44.006730" elapsed="0.380421"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:17:48.397828" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:17:44.388149" elapsed="4.010695"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:17:43.540976" elapsed="4.857868"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:17:52.402834" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:17:48.399869" elapsed="4.002965"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:17:40.583799" elapsed="11.819035"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:52.425403" level="INFO">Current page contains element '//label[text()="Organization:"]'.</msg>
-<arg>//label[text()="Organization:"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-02-05T17:17:52.403666" elapsed="0.021737"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:17:54.436205" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:17:52.426399" elapsed="2.009806"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:54.450977" level="INFO">Current page contains element '//label[text()="Lead/POC:"]'.</msg>
-<arg>//label[text()="Lead/POC:"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-02-05T17:17:54.436983" elapsed="0.013994"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:17:56.466618" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:17:54.451944" elapsed="2.014674"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:56.482418" level="INFO">Current page contains element '//label[text()="Action By:"]'.</msg>
-<arg>//label[text()="Action By:"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-02-05T17:17:56.467458" elapsed="0.014960"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:17:58.497101" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:17:56.483453" elapsed="2.013648"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:17:58.521966" level="INFO">Current page contains element '//label[text()="Region:"]'.</msg>
-<arg>//label[text()="Region:"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-02-05T17:17:58.500024" elapsed="0.022939"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:00.528391" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:17:58.523800" elapsed="2.005604"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:00.573960" level="INFO">Current page contains element '//label[text()="Status:"]'.</msg>
-<arg>//label[text()="Status:"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-02-05T17:18:00.533388" elapsed="0.041515"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:02.581961" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:00.575897" elapsed="2.006927"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:02.625061" level="INFO">Current page contains element '//label[text()="MSA:"]'.</msg>
-<arg>//label[text()="MSA:"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-02-05T17:18:02.584823" elapsed="0.040238"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:04.640874" level="INFO">Slept 2 seconds.</msg>
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:02.626372" elapsed="2.014502"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:04.664836" level="INFO">Current page contains element '//label[text()="SOW:"]'.</msg>
-<arg>//label[text()="SOW:"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-02-05T17:18:04.642895" elapsed="0.021941"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:06.680231" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:04.664836" elapsed="2.015395"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:06.715145" level="INFO">Current page contains element '//label[text()="NDA:"]'.</msg>
-<arg>//label[text()="NDA:"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-02-05T17:18:06.682276" elapsed="0.032869"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:08.722556" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:06.717140" elapsed="2.005416"/>
-</kw>
-<kw name="End Script" owner="Pre_req" type="TEARDOWN">
-<kw name="LogOut page" owner="Login">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:10.748753" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:08.734562" elapsed="2.014191"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:10.751795" level="INFO">Sending key(s) ('[Return]',) to //button[text()="Logout"] element.</msg>
-<msg time="2024-02-05T17:18:11.092424" level="INFO">Sending keys [Return]</msg>
-<arg>//button[text()="Logout"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:18:10.749804" elapsed="0.367489"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:18:08.730577" elapsed="2.387714"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-05T17:18:11.118291" elapsed="3.359855"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:18:08.727583" elapsed="5.750563"/>
-</kw>
-<doc>Verify that user able to click the filter option button</doc>
-<tag>Functional</tag>
-<status status="PASS" start="2024-02-05T17:17:40.579935" elapsed="33.900205"/>
-</test>
-<test id="s1-t5" name="Verify the Status bar" line="59">
-<kw name="Start Script" owner="Pre_req" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:14.489159" level="INFO">Opening browser 'chrome' to base url 'http://192.168.137.8:3355/home'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-05T17:18:14.488157" elapsed="2.950917"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-05T17:18:17.440068" elapsed="0.192895"/>
-</kw>
-<kw name="Login Page" owner="Login">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:17.635544" level="INFO">Typing text 'alwynj@datatemplate.com' into text field '//input[@name="userMail"]'.</msg>
-<arg>//input[@name="userMail"]</arg>
-<arg>alwynj@datatemplate.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:18:17.635544" elapsed="0.330117"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:17.967655" level="INFO">Typing text 'Def@123' into text field '//input[@name="password"]'.</msg>
-<arg>//input[@name="password"]</arg>
-<arg>Def@123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:18:17.966663" elapsed="0.119675"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:18.087336" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
-<msg time="2024-02-05T17:18:18.426663" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@type="submit"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:18:18.086338" elapsed="0.366256"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:22.457861" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:18.452594" elapsed="4.005849"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:18:17.633550" elapsed="4.825309"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:26.472530" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:22.459857" elapsed="4.012673"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:18:14.487160" elapsed="11.985370"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:26.474525" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
-<msg time="2024-02-05T17:18:26.907115" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@type="submit"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:18:26.473527" elapsed="1.041961"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:30.529206" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:27.527456" elapsed="3.001750"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:30.532199" level="INFO">Sending key(s) ('[Return]',) to //button[@aria-label="expand row"] element.</msg>
-<msg time="2024-02-05T17:18:30.941106" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@aria-label="expand row"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:18:30.530203" elapsed="0.524599"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:31.098684" level="INFO">Current page contains element '//button[text()='Add Status']'.</msg>
-<arg>//button[text()='Add Status']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-02-05T17:18:31.055797" elapsed="0.042887"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-05T17:18:31.101674" level="INFO">Add Status button is available in UI</msg>
-<arg>Add Status button is available in UI</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-05T17:18:31.100676" elapsed="0.000998"/>
-</kw>
-<kw name="End Script" owner="Pre_req" type="TEARDOWN">
-<kw name="LogOut page" owner="Login">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:33.114652" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:31.108656" elapsed="2.005996"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:33.115686" level="INFO">Sending key(s) ('[Return]',) to //button[text()="Logout"] element.</msg>
-<msg time="2024-02-05T17:18:33.430996" level="INFO">Sending keys [Return]</msg>
-<arg>//button[text()="Logout"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:18:33.114652" elapsed="0.346819"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:18:31.106661" elapsed="2.354810"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-05T17:18:33.461471" elapsed="2.432871"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:18:31.102671" elapsed="4.791671"/>
-</kw>
-<doc>Verify that Add ststus button is visible to the user</doc>
-<tag>Functional</tag>
-<status status="PASS" start="2024-02-05T17:18:14.484129" elapsed="21.411462"/>
-</test>
-<test id="s1-t6" name=" Verify edit the existing lead status" line="92">
-<kw name="Start Script" owner="Pre_req" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:35.905309" level="INFO">Opening browser 'chrome' to base url 'http://192.168.137.8:3355/home'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-05T17:18:35.905309" elapsed="2.836289"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-05T17:18:38.742871" elapsed="0.228156"/>
-</kw>
-<kw name="Login Page" owner="Login">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:38.973975" level="INFO">Typing text 'alwynj@datatemplate.com' into text field '//input[@name="userMail"]'.</msg>
-<arg>//input[@name="userMail"]</arg>
-<arg>alwynj@datatemplate.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:18:38.972978" elapsed="0.293222"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:39.267191" level="INFO">Typing text 'Def@123' into text field '//input[@name="password"]'.</msg>
-<arg>//input[@name="password"]</arg>
-<arg>Def@123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:18:39.266200" elapsed="0.109703"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:39.376900" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
-<msg time="2024-02-05T17:18:39.738682" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@type="submit"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:18:39.375903" elapsed="0.391702"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:43.782502" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:39.767605" elapsed="4.015613"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:18:38.972036" elapsed="4.811182"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:47.795053" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:43.784250" elapsed="4.011461"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:18:35.903350" elapsed="11.892361"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:47.799737" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
-<msg time="2024-02-05T17:18:48.191448" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@type="submit"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:18:47.797734" elapsed="1.203344"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:51.018719" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:49.003074" elapsed="2.015645"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:51.023707" level="INFO">Sending key(s) ('[Return]',) to //button[@aria-label="expand row"] element.</msg>
-<msg time="2024-02-05T17:18:51.496442" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@aria-label="expand row"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:18:51.022709" elapsed="0.808840"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:18:56.837102" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:51.833541" elapsed="5.004572"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:18:56.841144" level="INFO">Sending key(s) ('[Return]',) to (//button[@type="button"])[12] element.</msg>
-<msg time="2024-02-05T17:18:57.285347" level="INFO">Sending keys [Return]</msg>
-<arg>(//button[@type="button"])[12]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:18:56.840148" elapsed="1.161441"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:19:01.013783" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:18:58.003612" elapsed="3.011017"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:01.017656" level="INFO">Typing text '11022024' into text field '//input[@name="triggerDate"]'.</msg>
-<msg time="2024-02-05T17:19:01.243851" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-02-05T17:19:01.243851" level="FAIL">Element with locator '//input[@name="triggerDate"]' not found.</msg>
-<arg>//input[@name="triggerDate"]</arg>
-<arg>11022024</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2024-02-05T17:19:01.016664" elapsed="0.233170">Element with locator '//input[@name="triggerDate"]' not found.</status>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-02-05T17:19:01.250867" elapsed="0.000000"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<arg>//button[text()='submit']</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" start="2024-02-05T17:19:01.250867" elapsed="0.000961"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-02-05T17:19:01.251828" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<arg>User isable to edit an existing leads</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-02-05T17:19:01.251828" elapsed="0.000000"/>
-</kw>
-<kw name="End Script" owner="Pre_req" type="TEARDOWN">
-<kw name="LogOut page" owner="Login">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:19:03.256525" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:19:01.253823" elapsed="2.003625"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:03.261477" level="INFO">Sending key(s) ('[Return]',) to //button[text()="Logout"] element.</msg>
-<msg time="2024-02-05T17:19:03.661352" level="INFO">Sending keys [Return]</msg>
-<arg>//button[text()="Logout"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:19:03.258444" elapsed="0.435820"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:19:01.253823" elapsed="2.440441"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-05T17:19:03.695263" elapsed="2.272367"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:19:01.252826" elapsed="4.715470"/>
-</kw>
-<doc>Verify that add user can edit the existing status for a lead</doc>
-<tag>Functional</tag>
-<status status="FAIL" start="2024-02-05T17:18:35.901323" elapsed="30.068068">Element with locator '//input[@name="triggerDate"]' not found.</status>
-</test>
-<test id="s1-t7" name="Verify deleting a status from Status grid" line="108">
-<kw name="Start Script" owner="Pre_req" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:05.980260" level="INFO">Opening browser 'chrome' to base url 'http://192.168.137.8:3355/home'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-05T17:19:05.979263" elapsed="2.842043"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-05T17:19:08.822239" elapsed="0.154003"/>
-</kw>
-<kw name="Login Page" owner="Login">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:08.979016" level="INFO">Typing text 'alwynj@datatemplate.com' into text field '//input[@name="userMail"]'.</msg>
-<arg>//input[@name="userMail"]</arg>
-<arg>alwynj@datatemplate.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:19:08.978236" elapsed="0.285237"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:09.264946" level="INFO">Typing text 'Def@123' into text field '//input[@name="password"]'.</msg>
-<arg>//input[@name="password"]</arg>
-<arg>Def@123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:19:09.263473" elapsed="0.114694"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:09.380161" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
-<msg time="2024-02-05T17:19:09.736703" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@type="submit"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:19:09.379165" elapsed="0.381474"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:19:13.768924" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:19:09.760639" elapsed="4.008285"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:19:08.977238" elapsed="4.791686"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:19:17.774246" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:19:13.769810" elapsed="4.004436"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:19:05.977268" elapsed="11.797920"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:17.777182" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
-<msg time="2024-02-05T17:19:18.149601" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@type="submit"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:19:17.776182" elapsed="0.430522"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:19:20.215176" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:19:18.208699" elapsed="2.006477"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:20.217387" level="INFO">Sending key(s) ('[Return]',) to (//button[@aria-label="expand row"])[2] element.</msg>
-<msg time="2024-02-05T17:19:20.616414" level="INFO">Sending keys [Return]</msg>
-<arg>(//button[@aria-label="expand row"])[2]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:19:20.216176" elapsed="0.536971"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:19:25.756385" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:19:20.755042" elapsed="5.001343"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:25.758055" level="INFO">Sending key(s) ('[Return]',) to (//button[@type="button"])[16] element.</msg>
-<msg time="2024-02-05T17:19:26.266129" level="INFO">Sending keys [Return]</msg>
-<arg>(//button[@type="button"])[16]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:19:25.757060" elapsed="0.604770"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:19:28.378715" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:19:26.362828" elapsed="2.016901"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:28.384751" level="INFO">Sending key(s) ('[Return]',) to //button[text()="Yes"] element.</msg>
-<msg time="2024-02-05T17:19:28.637605" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-02-05T17:19:28.637605" level="FAIL">Element with locator '//button[text()="Yes"]' not found.</msg>
-<arg>//button[text()="Yes"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="FAIL" start="2024-02-05T17:19:28.383711" elapsed="0.255891">Element with locator '//button[text()="Yes"]' not found.</status>
-</kw>
-<kw name="End Script" owner="Pre_req" type="TEARDOWN">
-<kw name="LogOut page" owner="Login">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:19:30.642364" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:19:28.641596" elapsed="2.001782"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:30.646406" level="INFO">Sending key(s) ('[Return]',) to //button[text()="Logout"] element.</msg>
-<msg time="2024-02-05T17:19:31.052354" level="INFO">Sending keys [Return]</msg>
-<arg>//button[text()="Logout"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:19:30.644370" elapsed="0.440708"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:19:28.640599" elapsed="2.444479"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-05T17:19:31.085078" elapsed="2.301584"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:19:28.640599" elapsed="4.746063"/>
-</kw>
-<doc>Verify that user can delete a status from the status grid</doc>
-<tag>Functional</tag>
-<status status="FAIL" start="2024-02-05T17:19:05.974277" elapsed="27.414379">Element with locator '//button[text()="Yes"]' not found.</status>
-</test>
-<test id="s1-t8" name="Verify to updated data is visible in UI" line="120">
-<kw name="Start Script" owner="Pre_req" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:33.400622" level="INFO">Opening browser 'chrome' to base url 'http://192.168.137.8:3355/home'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-05T17:19:33.399624" elapsed="2.764405"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-05T17:19:36.166543" elapsed="0.186978"/>
-</kw>
-<kw name="Login Page" owner="Login">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:36.355516" level="INFO">Typing text 'alwynj@datatemplate.com' into text field '//input[@name="userMail"]'.</msg>
-<arg>//input[@name="userMail"]</arg>
-<arg>alwynj@datatemplate.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:19:36.355516" elapsed="0.298202"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:36.654716" level="INFO">Typing text 'Def@123' into text field '//input[@name="password"]'.</msg>
-<arg>//input[@name="password"]</arg>
-<arg>Def@123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T17:19:36.654716" elapsed="0.168550"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:36.824263" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
-<msg time="2024-02-05T17:19:37.170798" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@type="submit"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:19:36.823266" elapsed="0.367370"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:19:41.202169" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:19:37.191634" elapsed="4.011583"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:19:36.354518" elapsed="4.848699"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:19:45.210669" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:19:41.204214" elapsed="4.006955"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:19:33.397629" elapsed="11.814046"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:45.213670" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
-<msg time="2024-02-05T17:19:45.582123" level="INFO">Sending keys [Return]</msg>
-<arg>//button[@type="submit"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:19:45.212671" elapsed="0.404374"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:19:47.630976" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:19:45.619023" elapsed="2.011953"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:47.670868" level="INFO">Sending key(s) ('[Return]',) to (//button[@aria-label="expand row"])[2] element.</msg>
-<msg time="2024-02-05T17:19:50.262688" level="INFO">Sending keys [Return]</msg>
-<arg>(//button[@aria-label="expand row"])[2]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:19:47.664885" elapsed="2.846065"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:19:55.527864" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:19:50.515935" elapsed="5.012642"/>
-</kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:55.587411" level="INFO">Current page contains element '//td[text()="Alwyn Joseph"]'.</msg>
-<arg>//td[text()="Alwyn Joseph"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-02-05T17:19:55.530562" elapsed="0.057926"/>
-</kw>
-<kw name="End Script" owner="Pre_req" type="TEARDOWN">
-<kw name="LogOut page" owner="Login">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:19:57.610501" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:19:55.599377" elapsed="2.012027"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:19:57.613398" level="INFO">Sending key(s) ('[Return]',) to //button[text()="Logout"] element.</msg>
-<msg time="2024-02-05T17:19:57.973759" level="INFO">Sending keys [Return]</msg>
-<arg>//button[text()="Logout"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-02-05T17:19:57.612401" elapsed="0.440147"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:19:55.596384" elapsed="2.457161"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-05T17:19:58.053545" elapsed="2.411233"/>
-</kw>
-<status status="PASS" start="2024-02-05T17:19:55.592396" elapsed="4.873049"/>
-</kw>
-<doc>Verify that user is able to see the updated data in UI</doc>
-<tag>Functional</tag>
-<status status="PASS" start="2024-02-05T17:19:33.394641" elapsed="27.071797"/>
-</test>
-<test id="s1-t9" name="Verify Status date and Due date both are same" line="131">
-<kw name="Start Script" owner="Pre_req" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:20:00.475442" level="INFO">Opening browser 'chrome' to base url 'http://192.168.137.8:3355/home'.</msg>
-<msg time="2024-02-05T17:20:01.786850" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event): error trying to connect: dns error: No such host is known. (os error 11001)</msg>
-<msg time="2024-02-05T17:20:04.716939" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-02-05T17:20:04.716939" level="FAIL">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
-  (Session info: chrome=121.0.6167.87)
-Stacktrace:
-	GetHandleVerifier [0x00007FF734D15E42+3538674]
-	(No symbol) [0x00007FF734934C02]
-	(No symbol) [0x00007FF7347E5AEB]
-	(No symbol) [0x00007FF7347E1780]
-	(No symbol) [0x00007FF7347D4C9D]
-	(No symbol) [0x00007FF7347D3CAD]
-	(No symbol) [0x00007FF7347D2EFC]
-	(No symbol) [0x00007FF7347D2E9F]
-	(No symbol) [0x00007FF7347D13A5]
-	(No symbol) [0x00007FF7347D1C8C]
-	(No symbol) [0x00007FF7347E8179]
-	(No symbol) [0x00007FF73486C757]
-	(No symbol) [0x00007FF73484F0AA]
-	(No symbol) [0x00007FF73486BDE3]
-	(No symbol) [0x00007FF73484EE53]
-	(No symbol) [0x00007FF73481F514]
-	(No symbol) [0x00007FF734820631]
-	GetHandleVerifier [0x00007FF734D46CAD+3738973]
-	GetHandleVerifier [0x00007FF734D9C506+4089270]
-	GetHandleVerifier [0x00007FF734D94823+4057299]
-	GetHandleVerifier [0x00007FF734A65C49+720121]
-	(No symbol) [0x00007FF73494126F]
-	(No symbol) [0x00007FF73493C304]
-	(No symbol) [0x00007FF73493C432]
-	(No symbol) [0x00007FF73492BD04]
-	BaseThreadInitThunk [0x00007FFB312F7344+20]
-	RtlUserThreadStart [0x00007FFB32CC26B1+33]
-</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-02-05T17:20:00.474414" elapsed="4.250470">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
-  (Session info: chrome=121.0.6167.87)
-Stacktrace:
-	GetHandleVerifier [0x00007FF734D15E42+3538674]
-	(No symbol) [0x00007FF734934C02]
-	(No symbol) [0x00007FF7347E5AEB]
-	(No symbol) [0x00007FF7347E1780]
-	(No symbol) [0x00007FF7347D4C9D]
-	(No symbol) [0x00007FF7347D3CAD]
-	(No symbol) [0x00007FF7347D2EFC]
-	(No symbol) [0x00007FF7347D2E9F]
-	(No symbol) [0x00007FF7347D13A5]
-	(No symbol) [0x00007FF7347D1C8C]
-	(No symbol) [0x00007FF7347E8179]
-	(No symbol) [0x00007FF73486C757]
-	(No symbol) [0x00007FF73484F0AA]
-	(No symbol) [0x00007FF73486BDE3]
-	(No symbol) [0x00007FF73484EE53]
-	(No symbol) [0x00007FF73481F514]
-	(No symbol) [0x00007FF734820631]
-	GetHandleVerifier [0x00007FF734D46CAD+3738973]
-	GetHandleVerifier [0x00007FF734D9C506+4089270]
-	GetHandleVerifier [0x00007FF734D94823+4057299]
-	GetHandleVerifier [0x00007FF734A65C49+720121]
-	(No symbol) [0x00007FF73494126F]
-	(No symbol) [0x00007FF73493C304]
-	(No symbol) [0x00007FF73493C432]
-	(No symbol) [0x00007FF73492BD04]
-	BaseThreadInitThunk [0x00007FFB312F7344+20]
-	RtlUserThreadStart [0x00007FFB32CC26B1+33]
-</status>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-02-05T17:20:04.724884" elapsed="0.000000"/>
-</kw>
-<kw name="Login Page" owner="Login">
-<status status="NOT RUN" start="2024-02-05T17:20:04.725883" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-02-05T17:20:04.725883" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2024-02-05T17:20:00.473420" elapsed="4.252463">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
-  (Session info: chrome=121.0.6167.87)
-Stacktrace:
-	GetHandleVerifier [0x00007FF734D15E42+3538674]
-	(No symbol) [0x00007FF734934C02]
-	(No symbol) [0x00007FF7347E5AEB]
-	(No symbol) [0x00007FF7347E1780]
-	(No symbol) [0x00007FF7347D4C9D]
-	(No symbol) [0x00007FF7347D3CAD]
-	(No symbol) [0x00007FF7347D2EFC]
-	(No symbol) [0x00007FF7347D2E9F]
-	(No symbol) [0x00007FF7347D13A5]
-	(No symbol) [0x00007FF7347D1C8C]
-	(No symbol) [0x00007FF7347E8179]
-	(No symbol) [0x00007FF73486C757]
-	(No symbol) [0x00007FF73484F0AA]
-	(No symbol) [0x00007FF73486BDE3]
-	(No symbol) [0x00007FF73484EE53]
-	(No symbol) [0x00007FF73481F514]
-	(No symbol) [0x00007FF734820631]
-	GetHandleVerifier [0x00007FF734D46CAD+3738973]
-	GetHandleVerifier [0x00007FF734D9C506+4089270]
-	GetHandleVerifier [0x00007FF734D94823+4057299]
-	GetHandleVerifier [0x00007FF734A65C49+720121]
-	(No symbol) [0x00007FF73494126F]
-	(No symbol) [0x00007FF73493C304]
-	(No symbol) [0x00007FF73493C432]
-	(No symbol) [0x00007FF73492BD04]
-	BaseThreadInitThunk [0x00007FFB312F7344+20]
-	RtlUserThreadStart [0x00007FFB32CC26B1+33]
-</status>
-</kw>
-<kw name="End Script" owner="Pre_req" type="TEARDOWN">
-<kw name="LogOut page" owner="Login">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-05T17:20:06.731057" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-05T17:20:04.729884" elapsed="2.001915"/>
-</kw>
-<kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-02-05T17:20:06.734824" level="INFO">Sending key(s) ('[Return]',) to //button[text()="Logout"] element.</msg>
-<msg time="2024-02-05T17:20:07.086928" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-02-05T17:20:07.086928" level="FAIL">Element with locator '//button[text()="Logout"]' not found.</msg>
-<arg>//button[text()="Logout"]</arg>
-<arg>[Return]</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="FAIL" start="2024-02-05T17:20:06.732833" elapsed="0.356087">Element with locator '//button[text()="Logout"]' not found.</status>
-</kw>
-<status status="FAIL" start="2024-02-05T17:20:04.728196" elapsed="2.361724">Element with locator '//button[text()="Logout"]' not found.</status>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-05T17:20:07.089920" elapsed="2.357924"/>
-</kw>
-<status status="FAIL" start="2024-02-05T17:20:04.726880" elapsed="4.720964">Element with locator '//button[text()="Logout"]' not found.</status>
-</kw>
-<doc>Verify that the status date and Due date both are same</doc>
-<tag>Functional</tag>
-<status status="FAIL" start="2024-02-05T17:20:00.470422" elapsed="8.979479">Setup failed:
-WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
-  (Session info: chrome=121.0.6167.87)
-Stacktrace:
-	GetHandleVerifier [0x00007FF734D15E42+3538674]
-	(No symbol) [0x00007FF734934C02]
-	(No symbol) [0x00007FF7347E5AEB]
-	(No symbol) [0x00007FF7347E1780]
-	(No symbol) [0x00007FF7347D4C9D]
-	(No symbol) [0x00007FF7347D3CAD]
-	(No symbol) [0x00007FF7347D2EFC]
-	(No symbol) [0x00007FF7347D2E9F]
-	(No symbol) [0x00007FF7347D13A5]
-	(No symbol) [0x00007FF7347D1C8C]
-	(No symbol) [0x00007FF7347E8179]
-	(No symbol) [0x00007FF73486C757]
-	(No symbol) [0x00007FF73484F0AA]
-	(No symbol) [0x00007FF73486BDE3]
-	(No symbol) [0x00007FF73484EE53]
-	(No symbol) [0x00007FF73481F514]
-	(No symbol) [0x00007FF734820631]
-	GetHandleVerifier [0x00007FF734D46CAD+3738973]
-	GetHandleVerifier [0x00007FF734D9C506+4089270]
-	GetHandleVerifier [0x00007FF734D94823+4057299]
-	GetHandleVerifier [0x00007FF734A65C49+720121]
-	(No symbol) [0x00007FF73494126F]
-	(No symbol) [0x00007FF73493C304]
-	(No symbol) [0x00007FF73493C432]
-	(No symbol) [0x00007FF73492BD04]
-	BaseThreadInitThunk [0x00007FFB312F7344+20]
-	RtlUserThreadStart [0x00007FFB32CC26B1+33]
-
+<status status="FAIL" start="2024-02-15T14:50:49.609354" elapsed="17.779962">Page should have contained text 'Alwyn Joseph' but did not.
 
 Also teardown failed:
 Element with locator '//button[text()="Logout"]' not found.</status>
 </test>
+<test id="s1-t2" name="Verify the filter icon" line="23">
+<kw name="Start Script" owner="Pre_req" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-15T14:51:07.408077" level="INFO">Opening browser 'chrome' to base url 'http://192.168.137.8:3355/home'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-15T14:51:07.405786" elapsed="2.827631"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-15T14:51:10.233417" elapsed="0.154595"/>
+</kw>
+<kw name="Login Page" owner="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-15T14:51:10.389998" level="INFO">Typing text 'alwynj@datatemplate.com' into text field '//input[@name="userMail"]'.</msg>
+<arg>//input[@name="userMail"]</arg>
+<arg>alwynj@datatemplate.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-15T14:51:10.389998" elapsed="0.290303"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-15T14:51:10.682212" level="INFO">Typing text 'Def@123' into text field '//input[@name="password"]'.</msg>
+<arg>//input[@name="password"]</arg>
+<arg>Def@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-15T14:51:10.681254" elapsed="0.117646"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-02-15T14:51:10.799897" level="INFO">Sending key(s) ('[Return]',) to //button[@type="submit"] element.</msg>
+<msg time="2024-02-15T14:51:11.151270" level="INFO">Sending keys [Return]</msg>
+<arg>//button[@type="submit"]</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-02-15T14:51:10.798900" elapsed="0.379298"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-15T14:51:15.185262" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-15T14:51:11.179227" elapsed="4.006567"/>
+</kw>
+<status status="PASS" start="2024-02-15T14:51:10.388996" elapsed="4.797315"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-15T14:51:19.191467" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-15T14:51:15.187304" elapsed="4.005178"/>
+</kw>
+<status status="PASS" start="2024-02-15T14:51:07.401287" elapsed="11.791195"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-02-15T14:51:19.234348" level="INFO">Current page contains element 'xpath=//button[@type='submit']'.</msg>
+<arg>${search_submit_button}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-02-15T14:51:19.199443" elapsed="0.034905"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-15T14:51:19.237397" level="INFO">Filter icon is present in UI</msg>
+<arg>Filter icon is present in UI</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-15T14:51:19.236418" elapsed="0.000979"/>
+</kw>
+<kw name="End Script" owner="Pre_req" type="TEARDOWN">
+<kw name="LogOut page" owner="Login">
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="FAIL" start="2024-02-15T14:51:19.240331" elapsed="0.124667">Execution terminated by signal</status>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<arg>//button[text()="Logout"]</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" start="2024-02-15T14:51:19.365997" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-15T14:51:19.239334" elapsed="0.126663">Execution terminated by signal</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-02-15T14:51:19.366994" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-15T14:51:19.238430" elapsed="0.128564">Execution terminated by signal</status>
+</kw>
+<doc>This test case is to verify the filter is present in UI</doc>
+<tag>Functional</tag>
+<status status="FAIL" start="2024-02-15T14:51:07.396294" elapsed="11.972071">Teardown failed:
+Execution terminated by signal</status>
+</test>
+<test id="s1-t3" name="Verify filter button clickeble" line="30">
+<doc>Verify that user able to click the filter option button</doc>
+<tag>Functional</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-02-15T14:51:19.371486" elapsed="0.001491">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t4" name="Verify all filter pre-req are available in UI" line="38">
+<doc>Verify that user able to click the filter option button</doc>
+<tag>Functional</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-02-15T14:51:19.375970" elapsed="0.001994">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t5" name="Verify the Status bar" line="60">
+<doc>Verify that Add ststus button is visible to the user</doc>
+<tag>Functional</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-02-15T14:51:19.382952" elapsed="0.002192">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t6" name="Verify to updated data is visible in UI" line="126">
+<doc>Verify that user is able to see the updated data in UI</doc>
+<tag>Functional</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-02-15T14:51:19.404893" elapsed="0.002526">Test execution stopped due to a fatal error.</status>
+</test>
 <doc>Basic Functionality for Sale Tracker web UI</doc>
-<status status="FAIL" start="2024-02-05T17:16:47.825565" elapsed="201.648272"/>
+<status status="FAIL" start="2024-02-15T14:50:49.046844" elapsed="30.366027"/>
 </suite>
 <statistics>
 <total>
-<stat pass="6" fail="3" skip="0">All Tests</stat>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="6" fail="3" skip="0">Functional</stat>
+<stat pass="0" fail="2" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+<stat pass="0" fail="6" skip="0">Functional</stat>
 </tag>
 <suite>
-<stat pass="6" fail="3" skip="0" id="s1" name="Sales Tracker">Sales Tracker</stat>
+<stat pass="0" fail="6" skip="0" id="s1" name="Sales Tracker">Sales Tracker</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-02-05T17:20:01.786850" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event): error trying to connect: dns error: No such host is known. (os error 11001)</msg>
 </errors>
 </robot>

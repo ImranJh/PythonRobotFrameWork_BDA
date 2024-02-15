@@ -25,12 +25,6 @@ Verify add the New Status for the existing lead
     Sleep    5s
     Press Keys  //button[text()="Logout"]  [Return]
     Close Browser
-      Page Should Contain    Alwyn Joseph
-    Page Should Contain Element    //td[text()="Alwyn Joseph"]
-    Sleep    5s
-    Press Keys  //button[text()="Logout"]  [Return]
-    Close Browser
-
 
 
 

@@ -1,6 +1,8 @@
 *** Settings ***
 Documentation  Basic Functionality for Sale Tracker web UI
 Library    SeleniumLibrary
+#Library    Parallel
+#Library     LocustLibrary
 #Access to some of the global variable and use in script
 Resource  ../../Resources/Common Functionality/Login.robot
 Resource  ../../Resources/Common Functionality/Pre_req.robot
